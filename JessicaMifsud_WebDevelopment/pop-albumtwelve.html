@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>...Baby One More Time</title>
+
+  <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/bootstrapIndex.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <nav>
+    <div id="logo-container"></div>   <!--Logo found on the top left -->
+  </nav>
+
+  <aside class="sidebar-container"> <!-- Followed profiles will appear here -->
+    <div class="friends">
+      <a href="friendone.html">
+        <img src="assets/friendpfpgirl.png" alt="@laurenannemamo" />
+      </a>
+      <a href="friendtwo.html">
+        <img src="assets/friendpfpboy.png" alt="@andreapenza98" />
+      </a>
+    </div>
+  </aside>
+
+  <div class="main-wrapper">
+
+    <div class="topbar">
+      <a href="index.html">
+        <img id="logo" src="assets/logomusic.png" alt="Logo" /> <!--Logo will align with the content of the top bar -->
+      </a>
+
+      <div class="search-box">                                  <!--Search Bar is found at the centre of the top bar-->
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+
+      <div class="topbar-right">                                <!--Content on the top bar but on the righthand side -->
+        <div class="dropdown">    
+          <i class="fa-solid fa-bell notification fa-xl"></i>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="#">No new notifications.</a></li>    <!--Notifications will be found with a dropdown effect -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <img class="profile" src="assets/mypfp.png" alt="myProfile" /> 
+          <div class="dropdown-content">
+            <a href="profile.html">Profile</a>
+            <a href="contact.html">Contact Form</a>             <!--When your profile is pressed, a dropdown effect will take place including access to your profile and the contact form-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+
+      <main class="main-content">
+
+        <div class="categories">                                     <!--Different Genres found between container and top bar-->
+          <button><a href="new.html" class="link">New</a></button>
+          <button><a href="pop.html" class="link">Pop</a></button>
+          <button><a href="rock.html" class="link">Rock</a></button>
+        </div>
+
+      <!--ALL UNIQUE ALBUM PAGES MAKE USE OF THE SAME LAYOUT (refer to new_albumeight for more detail)-->
+        <div class="music-panel">
+
+          <!-- LEFT SIDE -->
+          <div class="music-left">
+
+            <img src="assets/bomt.png" class="album-image" alt="...Baby One More Time Album Cover" />
+
+            <div class="album-metatfour">
+
+              <h1>
+                ...Baby One More Time
+                <i class="fa-regular fa-comment" id="open-comments"></i>
+              </h1>
+
+              <p>Britney Spears</p>
+
+              <div class="album-score">
+                <i class="fa-solid fa-star" style="color:#C6D92C;"></i>
+                4.2 / 5
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="song-list">
+
+            <div class="song">
+              <div class="song-number">1</div>
+              <div class="song-title">...Baby One More Time</div>
+            </div>
+
+            <div class="song">
+              <div class="song-number">2</div>
+              <div class="song-title">(You Drive Me) Crazy</div>
+            </div>
+
+            <div class="song">
+              <div class="song-number">3</div>
+              <div class="song-title">Sometimes</div>
+            </div>
+
+            <div class="song">
+              <div class="song-number">4</div>
+              <div class="song-title">Soda Pop</div>
+            </div>
+
+            <div class="song">
+              <div class="song-number">5</div>
+              <div class="song-title">Born To Make you happy</div>
+            </div>
+
+            <div class="song">
+              <div class="song-number">6</div>
+              <div class="song-title">From The Bottom of My Broken Heart</div>
+            </div>
+
+            <div class="song">
+              <div class="song-number">7</div>
+              <div class="song-title">I Will Be There</div>
+            </div>
+
+            <div class="song">
+              <div class="song-number">8</div>
+              <div class="song-title">I Will Still Love You (ft. Don Philip)</div>
+            </div>
+
+            <div class="song">
+              <div class="song-number">9</div>
+              <div class="song-title">Deep In My Heart</div>
+            </div>
+
+            <div class="song">
+              <div class="song-number">10</div>
+              <div class="song-title">Thinkin' About You</div>
+            </div>
+
+            <div class="song">
+              <div class="song-number">11</div>
+              <div class="song-title">E-mail My Heart</div>
+            </div>
+
+            <div class="song">
+              <div class="song-number">12</div>
+              <div class="song-title">The Beat Goes On</div>
+            </div>
+
+            
+            <div class="song">
+              <div class="song-number">13</div>
+              <div class="song-title">I-ll Never Stop Loving you</div>
+            </div>
+
+            <div class="song">
+              <div class="song-number">14</div>
+              <div class="song-title">Autumn Goodbye</div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- COMMENTS POPUP -->
+  <div class="comments-popup" id="comments-popup">
+
+    <!-- HEADER -->
+    <div class="comments-header">
+      <h2>Comments</h2>
+      <i class="fa-solid fa-xmark" id="close-comments"></i>
+    </div>
+
+    <!-- COMMENTS SECTION -->
+    <div class="comments-section">
+
+      <!-- INPUT -->
+      <div class="comment-input-row">
+
+        <img src="assets/mypfp.png" class="comment-avatar" alt="My Profile">
+
+        <div class="comment-input-area">
+
+          <div class="star-rating">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+          </div>
+
+          <textarea placeholder="Comment..."></textarea>
+
+          <button>Post</button>
+
+        </div>
+      </div>
+
+    
+  <div class="comment">
+        <a href="personone.html">
+        <img src="assets/profileone.png" class="comment-avatar" alt="@mariajanejones">
+        </a>
+        <div class="comment-content">
+
+          <div class="comment-box">
+
+            <div class="comment-top">
+
+              <span class="username">@mariajanejones</span>
+
+              <span class="rating">
+                <i class="fa-solid fa-star" style="color:#C6D92C;"></i>
+                3 / 5
+              </span>
+
+            </div>
+
+            <p>Enjoyed it!</p>
+
+          </div>
+
+          <i class="fa-solid fa-heart like-btn fa-sm"></i>
+
+        </div>
+      </div>
+
+      <div class="comment">
+
+        <a href="persontwo.html">
+        <img src="assets/profiletwo.png" class="comment-avatar" alt="@kyle_micallef">
+        </a>
+        <div class="comment-content">
+
+          <div class="comment-box">
+
+            <div class="comment-top">
+
+              <span class="username">@kyle_micallef</span>
+
+              <span class="rating">
+                <i class="fa-solid fa-star" style="color:#C6D92C;"></i>
+                3 / 5
+              </span>
+
+            </div>
+
+            <p>Not usually my taste, but it was good.</p>
+
+          </div>
+
+          <i class="fa-solid fa-heart like-btn fa-sm"></i>
+
+        </div>
+      </div>
+
+      <div class="comment">
+
+        <a href="personthree.html">
+        <img src="assets/profilethree.png" class="comment-avatar" alt="@rach._.tabone">
+        </a>
+
+        <div class="comment-content">
+
+          <div class="comment-box">
+
+            <div class="comment-top">
+
+              <span class="username">@rach._.tabone</span>
+
+              <span class="rating">
+                <i class="fa-solid fa-star" style="color:#C6D92C;"></i>
+                5 / 5
+              </span>
+
+            </div>
+
+            <p>So good enjoyed every second!</p>
+
+          </div>
+
+          <i class="fa-solid fa-heart like-btn fa-sm"></i>
+        </div>
+        </div>
+
+        <div class="comment">
+
+        <a href="personfour.html">
+        <img src="assets/profilefour.png" class="comment-avatar" alt="@lara_sof_davison">
+        </a>
+
+        <div class="comment-content">
+
+          <div class="comment-box">
+
+            <div class="comment-top">
+
+              <span class="username">@lara_sof_davison</span>
+
+              <span class="rating">
+                <i class="fa-solid fa-star" style="color:#C6D92C;"></i>
+                5 / 5
+              </span>
+
+            </div>
+
+            <p>This is Art!</p>
+
+          </div>
+
+          <i class="fa-solid fa-heart like-btn fa-sm"></i>
+        </div>
+        </div>
+
+        <div class="comment">
+
+        <a href="personfive.html">
+        <img src="assets/profilefive.png" class="comment-avatar" alt="@liam._.testa06">
+        </a>
+
+        <div class="comment-content">
+
+          <div class="comment-box">
+
+            <div class="comment-top">
+
+              <span class="username">@liam._.testa06</span>
+
+              <span class="rating">
+                <i class="fa-solid fa-star" style="color:#C6D92C;"></i>
+                4 / 5
+              </span>
+
+            </div>
+
+            <p>Wow!</p>
+
+          </div>
+
+          <i class="fa-solid fa-heart like-btn fa-sm"></i>
+        </div>
+        </div>
+
+       
+ 
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    const openBtn = document.getElementById("open-comments");
+    const closeBtn = document.getElementById("close-comments");
+    const popup = document.getElementById("comments-popup");
+
+    openBtn.addEventListener("click", function () {
+      popup.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", function () {
+      popup.classList.remove("active");
+    });
+
+    const stars = document.querySelectorAll(".star");
+
+    stars.forEach((star, index) => {
+
+      star.addEventListener("click", () => {
+
+        stars.forEach((s, i) => {
+
+          if (i <= index) {
+            s.style.color = "#C6D92C";
+          } else {
+            s.style.color = "#5f5f5f";
+          }
+
+        });
+
+      });
+
+    });
+
+    const hearts = document.querySelectorAll(".like-btn");
+
+    hearts.forEach((heart) => {
+
+      heart.addEventListener("click", () => {
+        heart.classList.toggle("liked");
+      });
+
+    });
+
+  </script>
+</div>
+</div>
+</body>
+</html>

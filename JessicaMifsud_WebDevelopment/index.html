@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+
+  <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/bootstrapIndex.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+  <nav>
+    <div id="logo-container"></div>   <!--Logo found on the top left -->
+  </nav>
+
+  <aside class="sidebar-container"> <!-- Followed profiles will appear here -->
+    <div class="friends">
+      <a href="friendone.html">
+        <img src="assets/friendpfpgirl.png" alt="@laurenannemamo" />
+      </a>
+      <a href="friendtwo.html">
+        <img src="assets/friendpfpboy.png" alt="@andreapenza98" />
+      </a>
+    </div>
+  </aside>
+
+  <div class="main-wrapper">
+
+    <div class="topbar">
+      <a href="index.html">
+        <img id="logo" src="assets/logomusic.png" alt="Logo" /> <!-- Followed profiles will appear here -->
+      </a>
+
+      <div class="search-box">                                  <!--Search Bar is found at the centre of the top bar-->
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+
+      <div class="topbar-right">                                <!--Content on the top bar but on the righthand side -->
+        <div class="dropdown">    
+          <i class="fa-solid fa-bell notification fa-xl"></i>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="#">No new notifications.</a></li>    <!--Notifications will be found with a dropdown effect -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <img class="profile" src="assets/mypfp.png" alt="myProfile" /> 
+          <div class="dropdown-content">
+            <a href="profile.html">Profile</a>
+            <a href="contact.html">Contact Form</a>             <!--When your profile is pressed, a dropdown effect will take place including access to your profile and the contact form-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <main class="main-content">
+
+        <div class="categories">                                      <!--Different Genres found between container and top bar-->
+          <button><a href="new.html" class="link">New</a></button>
+          <button><a href="pop.html" class="link">Pop</a></button>
+          <button><a href="rock.html" class="link">Rock</a></button>
+        </div>
+        <!-- UPCOMING ALBUMS (With Countdown Trigger) -->
+         <!-- First Row -->
+        <section>
+          <div class="section-title">
+            <h2>Upcoming Albums 
+              <a href="upcoming.html"><i class="fa-solid fa-arrow-down fa-rotate-270" style="color:#ed2593;"></i></a>
+            </h2>
+          </div>
+
+          <div class="albums">  
+            <!-- These trigger the modal with a countdown -->
+            <div class="album-card" style="cursor: pointer;" onclick="openAlbum('assets/pureflowpt1.png', 'PUREFLOW, pt.1', 'LE SSERAFIM', 'May 22, 2026')">
+              <img src="assets/pureflowpt1.png" alt="pureflow p1 by LE SSERAFIM"/>
+            </div>
+            <div class="album-card" style="cursor: pointer;" onclick="openAlbum('assets/tbodl.jpg', 'The Boys of Dungeon Lane', 'Paul McCartney', 'June 10, 2026')">
+              <img src="assets/tbodl.jpg" alt="Paul McCartney" />
+            </div>
+
+            <div class="album-card" style="cursor: pointer;" onclick="openAlbum('assets/sanctuary.png', 'Sanctuary', 'Evanescence', 'July 15, 2026')">
+              <img src="assets/sanctuary.png" alt="Sanctuary by Evanescence" />
+            </div>
+            <div class="album-card" style="cursor: pointer;" onclick="openAlbum('assets/dirtyblonde.png', 'Dirty Blonde', 'Bebe Rexha', 'August 20, 2026')">
+              <img src="assets/dirtyblonde.png" alt="Dirty Blonde by Bebe Rexha" />
+            </div>
+            <div class="album-card" style="cursor: pointer;" onclick="openAlbum('assets/yspsfagsil.png', 'you seem pretty sad for a girl so in love', 'Olivia Rodrigo', 'June 12, 2026')">
+              <img src="assets/yspsfagsil.png" alt="you seem pretty sad for a girl so in love by Olivia Rodrigo" />
+            </div>
+            <div class="album-card" style="cursor: pointer;" onclick="openAlbum('assets/thewowsignal.png', 'The Wow! Signal', 'Muse', 'June 30, 2026')">
+              <img src="assets/thewowsignal.png" alt="The Wow! Signal by Muse" />
+            </div>
+          </div>
+        </section>
+
+        <!-- NEWLY RELEASED ALBUMS -->
+         <!-- Second Row -->
+        <section>
+          <div class="section-title">
+            <h2>Newly Released Albums 
+              <a href="new.html"><i class="fa-solid fa-arrow-down fa-rotate-270" style="color:#ed2593;"></i></a>
+            </h2>
+          </div>
+          <div class="albums">
+            <div class="album-card"><a href="new_albumone.html"><img src="assets/arirang.png" alt="ARIRANG by BTS" /></a></div>
+            <div class="album-card"><a href="new_albumtwo.html"><img src="assets/kaltdo.png" alt="Kiss All The Time. Disco, Occasionally. by Harry Styles" /></a></div>
+            <div class="album-card"><a href="new_albumthree.html"><img src="assets/bully.png" alt="Bully by Kanye West" /></a></div>
+            <div class="album-card"><a href="new_albumfour.html"><img src="assets/thefalloff.png" alt="The Fall Off by J. Cole" /></a></div>
+            <div class="album-card"><a href="new_albumfive.html"><img src="assets/theromantic.png" alt="The Romantic by Bruno Mars" /></a></div>
+            <div class="album-card"><a href="new_albumsix.html"><img src="assets/octane.png" alt="Octane by Don Toliver" /></a></div>
+          </div>
+        </section>
+  </main>
+  </div>
+
+ <!-- THE MODAL -->
+  <dialog id="albumModal">
+    <div class="album-capsule">
+      <button class="back-btn" onclick="closeAlbumModal()" style="size: 20%;">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      
+      <div class="modal-art">
+        <img id="modalImg"  alt="Album Cover style='size: 20%;'>" />
+      </div>
+
+      <div class="modal-info">
+        <h1 id="modalTitle"></h1>
+        <h2 id="modalArtist"></h2>
+        <p id="modalDate"></p>
+        
+      
+        <div id="countdownDisplay" class="countdown-timer"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- JAVA-->
+  <script>
+    const modal = document.getElementById("albumModal");
+    let countdownInterval;
+
+    function openAlbum(image, title, artist, dateString) {
+      document.getElementById("modalImg").src = image;
+      document.getElementById("modalTitle").innerText = title;
+      document.getElementById("modalArtist").innerText = artist;
+      document.getElementById("modalDate").innerText = "Expected " + dateString;
+      
+      startCountdown(dateString);
+      modal.showModal(); 
+    }
+
+    function startCountdown(dateString) {
+      clearInterval(countdownInterval);
+      const targetDate = new Date(dateString).getTime();
+
+      countdownInterval = setInterval(() => {
+        const now = new Date().getTime();
+        const diff = targetDate - now;
+
+        if (diff < 0) {
+          document.getElementById("countdownDisplay").innerText = "ALBUM RELEASED";
+          clearInterval(countdownInterval);
+          return;
+        }
+
+        const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById("countdownDisplay").innerText = `${d}d ${h}h ${m}m ${s}s remaining`;
+      }, 1000);
+    }
+
+    function closeAlbumModal() {
+      modal.close();
+      clearInterval(countdownInterval);
+    }
+
+    // Close on clicking background
+    modal.addEventListener("click", e => {
+      if (e.target === modal) closeAlbumModal();
+    });
+  </script>
+  
+  </div>
+</body>
+</html>
