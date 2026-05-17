@@ -100,24 +100,20 @@
 
             
             <div class="mb-3">
-              <label class="form-label d-block">Reason for Contact</label> <!-- dropdown -->
-
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                  data-bs-toggle="dropdown">
-                  Choose a reason...
-                </button>
-
-                
-                <ul class="dropdown-menu">    
-                  <li><a class="dropdown-item" href="#" data-value="Report a Problem">Report a Problem</a></li>
-                  <li><a class="dropdown-item" href="#" data-value="Album Recommendations">Album Recommendations</a></li>
-                  <li><a class="dropdown-item" href="#" data-value="Upgrade Suggestions">Upgrade Suggestions</a></li>
-                </ul> <!--When button is clicked, drop down will take place-->
+                <div class="form-row align-items-center">
+                  <div class="col-auto my-1">
+                    <label class="form-label d-block">Reason for Contact</label> <!-- dropdown -->
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                      <option selected>Select an Option..</option>
+                      <option value="1">Report a Problem</option>
+                      <option value="2">Album Recommendations</option>
+                      <option value="3">Upgrade Suggestions</option>
+                    </select>
+                  </div>
+                  </div>
               </div>
-            </div>
-
             
+
             <div class="mb-3">
               <label class="form-label">Message</label>
               <textarea class="form-control" name="message" rows="5"

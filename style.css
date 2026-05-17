@@ -126,31 +126,31 @@ padding: 40px;
 }
 
 /* CATEGORY/GENRES BUTTONS */
-.categories{
- width:590px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin:40px 700px;
-  gap:20px;
+.categories {
+  width: 590px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 710px;
+  gap: 20px;
 }
 
 .categories-button {
-  width:180px;
-  padding:10px;
+ width: 180px;
+  padding: 10px 0;
   border-radius: 10px;
   background: transparent;
   border: 2px solid #C6D92C;
   color: white;
   font-size: 25px;
-  cursor: pointer;
-  justify-content: center;
-  transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+  display: block;
 }
 
-.categories button:hover {
+.categories-button:hover {
   background: #ed2593a2;
-  border:  2px solid #ed2593a2;
+  border: 2px solid #ed2593a2;
   color: white;
 }
 
@@ -358,7 +358,7 @@ a.link {
     background:#3E4149;
     border-radius:25px;
     padding:50px;
-    margin-top:30px;
+    margin-top:50px;
 }
 
 /* LEFT SIDE */
@@ -399,6 +399,13 @@ a.link {
     font-weight:600;
     color:white;
     transform:translate(70px,-50px)
+}
+
+.album-scoretwo{
+    font-size:50px;
+    font-weight:600;
+    color:white;
+    transform:translate(70px,0px)
 }
 
 /* SONG LIST */
